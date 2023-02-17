@@ -1,6 +1,7 @@
 * {
     font-family: monospace;
 }
+
 /* NAVBAR */
 
 .container {
@@ -10,7 +11,7 @@
     padding: 0 3rem;
 }
 
-.container > div {
+.container>div {
     padding: 10px;
     text-align: center;
     font-size: 14sp;
@@ -29,12 +30,14 @@ main {
     margin-left: 50px;
     margin-top: 30px;
 }
+
 .form {
     display: flex;
     margin-bottom: 5px;
     align-content: center;
     flex-direction: column;
 }
+
 .form-input {
     display: flex;
     flex-direction: column;
@@ -42,7 +45,9 @@ main {
     gap: 3px;
 }
 
-input[type="text"], input[type="date"], textarea {
+input[type="text"],
+input[type="date"],
+textarea {
     width: 100%;
     border: 2px solid lightgray;
     border-radius: .3rem;
