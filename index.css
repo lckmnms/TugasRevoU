@@ -1,0 +1,54 @@
+* {
+    font-family: monospace;
+}
+/* NAVBAR */
+
+.container {
+    border: 10px solid #eac11f;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 3rem;
+}
+
+.container > div {
+    padding: 10px;
+    text-align: center;
+    font-size: 14sp;
+    color: #ffeead;
+    border: 2px solid;
+    background-color: green;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+/* KONTEN */
+
+main {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.form {
+    display: flex;
+    margin-bottom: 5px;
+    align-content: center;
+    flex-direction: column;
+}
+.form-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    gap: 3px;
+}
+
+input[type="text"], input[type="date"], textarea {
+    width: 100%;
+    border: 2px solid lightgray;
+    border-radius: .3rem;
+    padding: .3rem;
+}
+
+#formulir {
+    width: 40%;
+}
