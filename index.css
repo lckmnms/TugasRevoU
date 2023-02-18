@@ -1,0 +1,109 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVIGASI */
+.logo {
+    margin-left: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabel {
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-right: 150px;
+}
+
+.tabel-row {
+    border: solid;
+
+}
+
+.tabel-data {
+    padding: 5px 20px;
+    border:solid;
+
+}
+
+.garis {
+    stroke-width: auto;
+}
+
+
+/* MAIN */
+#nama {
+    display: flex;
+    align-content: center;
+    margin-left: 6%;
+}
+
+.lukman {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.gambar {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+
+.double-hr {
+    padding-top: 30px;
+}
+
+.our {
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.awalan {
+    display: flex;
+    align-content: center;
+    margin-left: 6%;
+}
+
+.foto-kucing {
+    display: flex;
+    align-content: center;
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.foto {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly ;
+}
+
+#foto-profil {
+    margin-bottom: 50px;
+}
+
+.awal-pesan {
+    display: flex;
+    align-content: center;
+    margin-left: 6%;
+}
+
+.message {
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.masukan {
+    display: flex;
+}
+
+tr {
+    margin-bottom: 10px;
+}
