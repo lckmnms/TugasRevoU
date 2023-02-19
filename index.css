@@ -3,6 +3,7 @@
 }
 
 /* NAVIGASI */
+
 .logo {
     margin-left: 30px;
 }
@@ -18,15 +19,11 @@ nav {
     margin-right: 150px;
 }
 
-.tabel-row {
-    border: solid;
-
-}
 
 .tabel-data {
+    border-radius: 10px;
     padding: 5px 20px;
-    border:solid;
-
+    border: solid;
 }
 
 .garis {
@@ -82,7 +79,16 @@ nav {
 .foto {
     display: flex;
     align-items: center;
-    justify-content:space-evenly ;
+    justify-content: space-evenly;
+}
+
+.nama-hewan {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    align-content: center;
+    justify-content: space-evenly;
+    gap: 70px;
 }
 
 #foto-profil {
@@ -106,4 +112,25 @@ nav {
 
 tr {
     margin-bottom: 10px;
+}
+
+/* footer */
+.formulir {
+    display: flex;
+    align-content: center;
+    margin-bottom: 10px;
+    margin-left: 85px;
+}
+
+input {
+    border-radius: 5px;
+    /* width: 20px; */
+}
+
+.kotak-pesan {
+    border-radius: 5px;
+}
+
+.form-pesan {
+    align-items: start;
 }
