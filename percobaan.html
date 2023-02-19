@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>percobaan</title>
+    <style>
+        * {
+            font-family: monospace;
+        }
+
+        /* NAVBAR */
+
+        .container {
+            border: 10px solid #eac11f;
+            display: flex;
+            justify-content: flex-end;
+            padding: 0 3rem;
+        }
+
+        .container>div {
+            padding: 10px;
+            text-align: center;
+            font-size: 14sp;
+            color: #ffeead;
+            border: 2px solid;
+            background-color: green;
+        }
+
+        .logo {
+            margin-right: auto;
+        }
+
+        /* KONTEN */
+
+        main {
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+
+        .form {
+            display: flex;
+            margin-bottom: 5px;
+            align-content: center;
+            flex-direction: column;
+        }
+
+        .form-input {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            gap: 3px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            border: 2px solid lightgray;
+            border-radius: .3rem;
+            padding: .3rem;
+        }
+
+        #formulir {
+            width: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="form">
+        <div class="input-group">
+            <label class="label">Nama</label> : &ThinSpace;
+            <div class="textbox">
+                <input type="text" name="nama" placeholder="Nama">
+            </div>
+        </div>
+        <div class="input-group">
+            <label class="label">Tanggal Lahir</label> : &ThinSpace;
+            <div class="textbox">
+                <input type="date" name="tgl" id="">
+            </div>
+        </div>
+        <div class="input-group">
+            <label class="label">Jenis Kelamin</label> : &ThinSpace;
+            <div class="textbox">
+                <div>
+                    <input type="radio" name="Laki-laki" id="" value="Laki-laki">
+                    <label class="label" for="">Laki-laki</label>
+                </div>
+                <div>
+                    <input type="radio" name="Perempuan" id="" value="Perempuan">
+                    <label class="label" for="">Perempuan</label>
+                </div>
+            </div>
+        </div>
+        <div class="input-group">
+            <label class="label">Pesan</label> : &ThinSpace;
+            <div class="textbox">
+                <textarea name="pesan" id="" cols="30" rows="3" placeholder="Pesan"></textarea>
+            </div>
+        </div>
+
+        <input type="button" value="Submit">
+    </form>
+
+
+</body>
+
+</html>
