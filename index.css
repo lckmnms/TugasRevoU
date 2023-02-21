@@ -4,6 +4,14 @@
 
 /* NAVIGASI */
 
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 16px 24px;
+}
+
 .logo {
     margin-left: 30px;
 }
@@ -13,21 +21,39 @@ nav {
     justify-content: space-between;
 }
 
-.tabel {
-    border-collapse: collapse;
-    margin-top: 10px;
-    margin-right: 150px;
+.header-wrapper>.navigasi {
+    display: flex;
 }
 
-
-.tabel-data {
-    border-radius: 10px;
-    padding: 5px 20px;
-    border: solid;
+.header-wrapper>.navigasi>button {
+    background-color: white;
+    padding: 8px 16px;
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: 0.3s background-color ease-in-out;
 }
 
-.garis {
-    stroke-width: auto;
+.header-wrapper>.navigasi>button:hover {
+    background-color: rgb(95, 104, 112);
+
+}
+
+.header-wrapper>.navigasi>button:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.header-wrapper>.navigasi>button:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-wrapper {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 14px;
+    }
 }
 
 
