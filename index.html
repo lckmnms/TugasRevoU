@@ -16,17 +16,17 @@
                 src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png"
                 alt="logo" width="50px" height="100%">
             <div class="navigasi">
-                <button>HOME</button>
-                <button>My Portofolio</button>
-                <button>Portofolio</button>
-                <button>Message Us</button>
+                <a href="index.html"><button>Home</button></a>
+                <a href="index.html"><button>My Portofolio</button></a>
+                <a href="index.html"><button>Portofolio</button></a>
+                <a href="#pesan"><button>Message Us</button></a>
             </div>
         </nav>
     </header>
     <main>
-        <setion id="nama">
+        <setion class="awalan">
             <div class="greet">
-                <p class="lukman">Halo Lukman, Welcome to Website</p>
+                <p class="lukman">Halo <span id="nama">Lukman</span>, Welcome to Website</p>
                 <p>Ini adalah website pertama</p>
             </div>
         </setion>
@@ -34,9 +34,7 @@
             <img src="https://3.bp.blogspot.com/-XbsKf2Hu778/UxVtx1PXe2I/AAAAAAAAKtI/WewtyZGqKaA/s1600/Alam04.jpg"
                 alt="foto pemandangan" width="1366" height="578">
         </div>
-        <div class="double-hr">
-            <hr>
-            <hr>
+        <div class="double-garis">
         </div>
         <section id="foto-profil">
             <div class="awalan">
@@ -61,38 +59,90 @@
                 <p>Aligator</p>
             </div>
         </section>
-        <div class="garis">
-            <hr>
+        <div class="double-garis">
         </div>
     </main>
-    <section id="pesan">
+    <section href="" id="pesan">
         <div class="awal-pesan">
             <p class="message">Message Us</p>
         </div>
-        <div class="formulir">
-            <form action="">
-                <table class="form">
-                    <tr>
-                        <td>Nama : </td>
-                        <td><input type="text" placeholder="Nama"></td>
-                    </tr>
-                    <tr>
-                        <td>Tanggal Lahir : </td>
-                        <td><input type="date"></td>
-                    </tr>
-                    <tr>
-                        <td>Jenis Kelamin :</td>
-                        <td><input type="radio" name="gender" id="">Laki laki
-                            <input type="radio" name="gender" id="">Perempuan
-                        </td>
-                    </tr>
-                    <tr class="form-pesan">
-                        <td>Pesan : </td>
-                        <td><textarea class="kotak-pesan" name="" id="" cols="30" rows="10"></textarea></td>
-                    </tr>
-                </table>
+        <main class="content">
+            <form name="form" class="form" onsubmit="return validasiForm()">
+                <div class="input-group">
+                    <label class="label">Nama</label> : &ThinSpace;
+                    <div class="textbox">
+                        <input type="text" name="nama" placeholder="Nama">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label class="label">Tanggal Lahir</label> : &ThinSpace;
+                    <div class="textbox">
+                        <input type="date" name="tanggal-lahir" id="">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label class="label">Jenis Kelamin</label> : &ThinSpace;
+                    <div class="textbox">
+                        <div>
+                            <input type="radio" name="gender" id="" value="Laki-laki">
+                            <label class="label" for="">Laki-laki</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" id="" value="Perempuan">
+                            <label class="label" for="">Perempuan</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label class="label">Pesan</label> : &ThinSpace;
+                    <div class="textbox">
+                        <textarea name="pesan" id="" cols="30" rows="3" placeholder="Pesan"></textarea>
+                    </div>
+                </div>
+
+                <input type="submit" value="Submit">
             </form>
-        </div>
+
+            <div class="formulir-output">
+                <p>Nama : <span id="out-nama"></span></p>
+                <p>Tanggal Lahir : <span id="out-tgllahir"></span></p>
+                <p>Jenis Kelamin : <span id="out-gender"></span></p>
+                <p>Pesan : <span id="out-pesan"></span></p>
+            </div>
+        </main>
+
+
+        <script>
+
+            // const nama = prompt("Silahkan masukan nama anda: ")
+
+            // document.getElementById("nama").innerText = nama;
+
+            function validasiForm() {
+                var nama = document.forms["form"]["nama"].value;
+                var tglLahir = document.forms["form"]["tanggal-lahir"].value;
+                var jk = document.forms["form"]["gender"].value;
+                var pesan = document.forms["form"]["pesan"].value;
+
+                if (nama == "" || tglLahir == "" || jk == "" || pesan == "") {
+                    alert('input tidak boleh kosong');
+                    return false;
+                }
+
+                document.getElementById("out-nama").innerText = nama;
+                document.getElementById("out-tgllahir").innerText = tglLahir;
+                document.getElementById("out-gender").innerHTML = jk;
+                document.getElementById("out-pesan").innerText = pesan;
+
+                return false;
+            }
+        </script>
+    </section>
+    <div class="double-garis">
+    </div>
+    <section class="footer">
+        <p>Created By Muhammad Lukman</p>
+        <p>Mockup By RevoU</p>
     </section>
 </body>
 
