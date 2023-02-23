@@ -2,6 +2,23 @@ body {
     font-family: "Montserrat";
 }
 
+.navigasi {
+    display: flex;
+}
+
+.navigasi> a >button {
+    background-color: white;
+    padding: 8px 16px;
+    border: 1px solid gray;
+    transition: 0.3s background-color ease-in-out;
+
+}
+
+.navigasi>a>button:hover {
+    background-color: rgb(179, 182, 186);
+
+}
+
 .container {
     border: 5px solid #ffcc5c;
     display: flex;
@@ -20,4 +37,40 @@ body {
 
 .logo {
     margin-right: auto;
+    margin-top: 8px;
+}
+
+.lb {
+    width: 100%;
+}
+
+.sekat {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    background-color: #ffcc5c ;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+}
+
+.footer {
+    background-color: #ffcc5c;
+}
+
+.footer-nama {
+    padding: 5px;
+}
+
+.footer-nama > p{
+    padding-left: 5%;
 }
